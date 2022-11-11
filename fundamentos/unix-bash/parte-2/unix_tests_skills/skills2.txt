@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Javascript
+Python
+NodeJS
+React
+MongoDB
