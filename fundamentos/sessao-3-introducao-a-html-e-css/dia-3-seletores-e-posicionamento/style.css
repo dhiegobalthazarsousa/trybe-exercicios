@@ -13,6 +13,8 @@
 }
 
 .baloon {
+  position:absolute;
+  left: 300px;
 
 }
 
@@ -22,4 +24,7 @@
 
 .bowser {
   width: 200px;
+  position: absolute;
+  left: 600px;
+  top: 300px;
 }
