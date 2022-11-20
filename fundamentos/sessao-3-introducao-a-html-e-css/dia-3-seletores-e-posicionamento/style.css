@@ -43,3 +43,8 @@ div:nth-of-type(4) > h3{
 div:nth-of-type(5) > h3{
   text-align: center;
 }
+
+/*Deixe as tags ímpares h3 com o texto em itálico.*/
+div:nth-of-type(2n+1) > h3{
+  font-style: italic;
+}
