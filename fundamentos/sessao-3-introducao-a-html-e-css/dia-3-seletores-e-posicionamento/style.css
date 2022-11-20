@@ -17,14 +17,17 @@
   left: 300px;
 
 }
-
+/*com position absolute eu consigo ajustar partindo do ponto zero ele sobre poe de acordo com a ordem de disposição*/
 .speach {
   font-size: 25px;
+  position:absolute;
+  top: 120px;
+  left: 320px;
 }
 
 .bowser {
   width: 200px;
   position: absolute;
   left: 600px;
-  top: 300px;
+  top: 250px;
 }
