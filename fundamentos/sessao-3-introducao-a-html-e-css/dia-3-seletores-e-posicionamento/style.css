@@ -6,3 +6,7 @@ h1, p{
 li:hover{
   background-color: green;
 }
+
+li:active{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
