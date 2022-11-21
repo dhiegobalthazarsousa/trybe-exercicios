@@ -30,6 +30,9 @@ li em{
     font-weight: 900;
 }
 
+/* - Na listagem de linguagens de programação, faça com que as 3 primeiras da lista
+possuam cor de fonte azul e, se alguma possuir "java*" no texto, utilize uma cor de
+fundo rosa. */
 #linguagens li:not(:nth-child(n+4)){
     color: blue;
 }
