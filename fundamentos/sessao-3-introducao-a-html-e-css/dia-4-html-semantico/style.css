@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono&family=Ubuntu:wght@300&display=swap');
+/*font-family: 'Bebas Neue', cursive;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Ubuntu', sans-serif;*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header{
+    width: 80%;
+    margin: auto;
+}
+
