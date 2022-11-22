@@ -17,7 +17,13 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Ubuntu', sans-serif;
 }
 
-.header{
+.heaer a{
+    color: white;
+}
+
+.header ul li{
+    padding: 15px;
+    display: inline-block;
 }
 
 .header h1{
@@ -25,12 +31,12 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 
-.header nav{
-    backgroun-color: rgb(112, 112, 211)
+header .nav{
+    background-color: rgb(112, 112, 211)
 }
 
 .main{
-    
+    margin: 10px;
 }
 
 .asside{
