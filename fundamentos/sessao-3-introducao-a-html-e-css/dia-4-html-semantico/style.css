@@ -36,16 +36,24 @@ header .nav{
 }
 
 .main{
+    text-align: center;
     margin: 10px;
+    vertical-align: auto;
 }
 
 .asside{
+    min-height: 300px;
+    text-align: justify;
+    display: inline-block;
     background-color: blue;
-    width:45%;
+    width:25%;
 }
 
 .content{
+    min-height: 300px;
+    height: auto;
+    text-align: justify;
     background-color: red;
     display:inline-block;
-    width: 45%;
+    width: 70%;
 }
