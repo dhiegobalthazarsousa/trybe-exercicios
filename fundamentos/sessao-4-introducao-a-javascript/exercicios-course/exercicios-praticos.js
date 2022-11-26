@@ -7,5 +7,9 @@ for(let index = 0; index < numbers.length; index++){
 }
 
 let media = soma/numbers.length;
-console.log(media);
-
+// console.log(media);
+if (media>20) {
+    console.log("Valor maior que vinte!!!");
+}else{
+    console.log("valor menor ou igual a vinte!!!!!");
+}
