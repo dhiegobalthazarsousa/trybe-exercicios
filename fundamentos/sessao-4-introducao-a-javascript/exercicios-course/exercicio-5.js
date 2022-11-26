@@ -8,4 +8,10 @@ for(let index = 0; index < numbers.length; index++){
         count++;
     }
 }
-console.log(count);
+
+
+if(count !== 0){
+    console.log(count);    
+}else{
+    console.log("Nenhum valor ímpar encontrado! ):");
+}
