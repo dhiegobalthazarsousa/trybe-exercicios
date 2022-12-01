@@ -63,3 +63,22 @@ function indexMoreLessReturn(array){
 
 let array = [2, 4, 6, 7,-5, 10, 0, -3];
 console.log(indexMoreLessReturn(array));
+
+// Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
+
+// Array de teste: ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];.
+
+// Valor esperado no retorno da função: Fernanda.
+
+function mostChar(array){
+    let bigger = array[0];
+    for(let value of array){
+        if(value.length > bigger.length){
+            bigger = value;
+        }
+    }
+    return bigger;
+}
+
+let array = ['José', 'Lucas', 'Nádia', 'Fernanda', 'CairoCastroBolivar', 'Joana'];
+console.log(mostChar(array));
