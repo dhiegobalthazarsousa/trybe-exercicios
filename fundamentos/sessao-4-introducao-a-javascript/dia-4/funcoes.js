@@ -29,7 +29,7 @@ if(palindromeVerify(word)){
 
 // Valor esperado no retorno da função: 4.
 
-function indexReturn(array){
+function indexBiggestReturn(array){
     let biggestNumber = array[0];
     let index = 0;
     for(let key in array){
@@ -41,4 +41,25 @@ function indexReturn(array){
     return index;
 }
 let array = [2, 3, 30, 7, 10, 31];
-console.log(indexReturn(array));
+console.log(indexBiggestReturn(array));
+
+// Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+
+// Array de teste: [2, 4, 6, 7, 10, 0, -3];.
+
+// Valor esperado no retorno da função: 6.
+
+function indexMoreLessReturn(array){
+    let biggestNumber = array[0];
+    let index = 0;
+    for(let key in array){
+        if(array[key] < biggestNumber){
+            biggestNumber = array[key];
+            index = key;
+        }
+    }
+    return index;
+}
+
+let array = [2, 4, 6, 7,-5, 10, 0, -3];
+console.log(indexMoreLessReturn(array));
