@@ -1,2 +1,2 @@
-let fruta = 'banana';
-console.log(`Eu gosto de ${fruta}`);
+const element = document.getElementsByClassName("center-content");
+    consolelog(element);
