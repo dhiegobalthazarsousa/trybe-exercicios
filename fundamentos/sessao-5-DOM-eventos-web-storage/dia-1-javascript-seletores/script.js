@@ -21,7 +21,10 @@ alterH1();
 function toUpperCaseMonster(){
     document.getElementsByTagName('p')[0].style.textTransform = 'uppercase';
 }
+
 toUpperCaseMonster();
+
+
 
 function exibe(){
     const ps = document.getElementsByTagName('p');
@@ -29,5 +32,6 @@ function exibe(){
         console.log(value.innerText);
     }
 }
+
 
 
