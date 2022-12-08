@@ -15,7 +15,11 @@ function toWhite(){
 }
 toWhite();
 
-function alterH1(){
-    document.getElementsByTagName('h1')[0].innerText = "Desafio - Javascript";
-}
+const alterH1 = () => {document.getElementsByTagName('h1')[0].innerText = "Desafio - Javascript";}
 alterH1();
+
+function toUpperCaseMonster(){
+    document.getElementsByTagName('p')[0].style.textTransform = 'uppercase';
+}
+toUpperCaseMonster();
+
