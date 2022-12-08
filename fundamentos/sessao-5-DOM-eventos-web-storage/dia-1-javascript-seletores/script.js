@@ -14,3 +14,8 @@ function toWhite(){
     element.style.backgroundColor = "white";
 }
 toWhite();
+
+function alterH1(){
+    document.getElementsByTagName('h1')[0].innerText = "Desafio - Javascript";
+}
+alterH1();
