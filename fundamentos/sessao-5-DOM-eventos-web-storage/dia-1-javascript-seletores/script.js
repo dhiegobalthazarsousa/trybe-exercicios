@@ -23,3 +23,11 @@ function toUpperCaseMonster(){
 }
 toUpperCaseMonster();
 
+function exibe(){
+    const ps = document.getElementsByTagName('p');
+    for(let value of ps){
+        console.log(value.innerText);
+    }
+}
+
+
