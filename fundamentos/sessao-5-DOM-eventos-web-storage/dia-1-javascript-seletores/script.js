@@ -4,3 +4,4 @@ paragraph.append(" e feliz");
 
 const mainContent = document.querySelector(".main-content");
 mainContent.style.backgroundColor = "rgb(76,164,109)";
+
