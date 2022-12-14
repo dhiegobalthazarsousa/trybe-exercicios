@@ -3,6 +3,7 @@ window.onload = () => {
     fontColorListenerEvent();
     fontSizeListenerEvent();
     lineHeightListenerEvent();
+    fontFamilyListenerEvent();
     initialize();
 }
 //GLOBAL VARIABLES
@@ -46,6 +47,16 @@ const lineHeightListenerEvent = () => {
 }
 
 
+const fontFamilyListenerEvent = () => {
+    let elements = getButtons('#font-family');
+    for (let element of elements) {
+        element.addEventListener("click", (event) => {
+            setFontFamily(event.target.innerHTML);
+        });
+    }
+}
+
+
 //FUNCTIONS WHO SET ELEMENTS
 const setBackGroundColor = (color) => {
     elementContent.style.backgroundColor = color;
@@ -67,12 +78,18 @@ const setLineHeight = (height) => {
     localStorage.setItem('lineHeight', height);
 }
 
+const setFontFamily = (family) => {
+    elementContent.style.fontFamily = family;
+    localStorage.setItem('fontFamily', family);
+}
+
 //FUNCTIONS WHO INICIALIZE
 const initialize = () => {
     elementContent.style.backgroundColor = localStorage.getItem('backgroundColor');
     elementContent.style.color = localStorage.getItem('fontColor');
     elementContent.style.fontSize = localStorage.getItem('fontSize');
     elementContent.style.lineHeight = localStorage.getItem('lineHeight');
+    elementContent.style.fontFamily = localStorage.getItem('fontFamily');
 }
 
 //FUNCTIONS WHO GET ELEMENTS
