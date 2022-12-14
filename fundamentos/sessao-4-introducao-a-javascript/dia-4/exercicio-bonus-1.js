@@ -8,8 +8,11 @@ let romanTemplate = {
     'M': 1000,
 }
 
-const toLatinNumber = romanNumber =>{
+const toLatinNumber = (romanNumber, template) =>{
     for(let index = 1; index < romanNumber; index++){
         let previous = index - 1;
+        if(romanNumber[previous] < romanNumber[index]){
+
+        }
     }
 }
