@@ -1,16 +1,13 @@
 window.onload = () => {
     backGroundListenerEvent();
     fontColorListenerEvent();
-    let fontColorButtons = getButtons('#font-color');
-    let sizeFontButtons = getButtons('#font-size');
-    let letterSpacingButtons = getButtons('#line-height');
-    let fontFamilyButtons = getButtons('#font-family');
+    fontSizeListenerEvent();
     initialize();
 }
 //GLOBAL VARIABLES
 let elementContent = document.querySelector('.content');
 
-//FUNCTIONS LISTENERS
+//FUNCTIONS WHO DO LISTENERS
 const backGroundListenerEvent = () => {
     let elements = getButtons('#background-color');
     for (let element of elements) {
@@ -29,6 +26,16 @@ const fontColorListenerEvent = () => {
     }
 }
 
+const fontSizeListenerEvent = () => {
+    let elements = getButtons('#font-size');
+    for (let element of elements) {
+        element.addEventListener("click", (event) => {
+            setFontSize(event.target.innerHTML);
+        });
+    }
+}
+
+//FUNCTIONS WHO SET ELEMENTS
 const setBackGroundColor = (color) => {
     elementContent.style.backgroundColor = color;
     localStorage.setItem('backgroundColor', color);
@@ -39,12 +46,21 @@ const setFontColor = (color) => {
     localStorage.setItem('fontColor', color);
 }
 
+const setFontSize = (size) => {
+    elementContent.style.fontSize = size;
+    localStorage.setItem('fontSize', size);
+}
+
+//FUNCTIONS WHO INICIALIZE
 const initialize = () => {
     elementContent.style.backgroundColor = localStorage.getItem('backgroundColor');
     elementContent.style.color = localStorage.getItem('fontColor');
+    elementContent.style.fontSize = localStorage.getItem('fontSize');
 }
 
+//FUNCTIONS WHO GET ELEMENTS
 const getButtons = (key) => document.querySelectorAll(key + '>button');
+
 // <!-- <script>
 //     window.onload = () => {
 //       const setBackgroundColor = (color) => {
