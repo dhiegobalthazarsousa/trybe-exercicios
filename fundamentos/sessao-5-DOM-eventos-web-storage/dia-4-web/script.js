@@ -2,6 +2,7 @@ window.onload = () => {
     backGroundListenerEvent();
     fontColorListenerEvent();
     fontSizeListenerEvent();
+    lineHeightListenerEvent();
     initialize();
 }
 //GLOBAL VARIABLES
@@ -35,6 +36,16 @@ const fontSizeListenerEvent = () => {
     }
 }
 
+const lineHeightListenerEvent = () => {
+    let elements = getButtons('#line-height');
+    for (let element of elements) {
+        element.addEventListener("click", (event) => {
+            setLineHeight(event.target.innerHTML);
+        });
+    }
+}
+
+
 //FUNCTIONS WHO SET ELEMENTS
 const setBackGroundColor = (color) => {
     elementContent.style.backgroundColor = color;
@@ -51,11 +62,17 @@ const setFontSize = (size) => {
     localStorage.setItem('fontSize', size);
 }
 
+const setLineHeight = (height) => {
+    elementContent.style.lineHeight = height;
+    localStorage.setItem('lineHeight', height);
+}
+
 //FUNCTIONS WHO INICIALIZE
 const initialize = () => {
     elementContent.style.backgroundColor = localStorage.getItem('backgroundColor');
     elementContent.style.color = localStorage.getItem('fontColor');
     elementContent.style.fontSize = localStorage.getItem('fontSize');
+    elementContent.style.lineHeight = localStorage.getItem('lineHeight');
 }
 
 //FUNCTIONS WHO GET ELEMENTS
