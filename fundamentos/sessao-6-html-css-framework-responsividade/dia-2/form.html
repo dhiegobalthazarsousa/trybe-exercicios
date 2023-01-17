@@ -7,46 +7,56 @@
   <title>Formulario-TrybeTrip</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
-  <h1>Concorra à Viagem dos seus sonhos com a TrybeTrip</h1>
-  <div class="container">
+  <header class="text-center">
+    <h1 class="text-muted my-4">Concorra à Viagem dos seus sonhos com a <span
+        class="text-success-emphasis">TrybeTrip</span> </h1>
+  </header>
+  <div class="container bg-dark text-light rounded-4 p-4 my-4">
     <form>
       <fieldset>
         <div class="mb-4">
           <label for="fullName" class="form-label">Nome Completo:</label>
-          <input type="text" id="fullName" name="fullName" placeholder="Digite seu nome completo" maxlength="40"
-            minlength="10" class="form-control" required>
-        </div>
-        <div class="mb-4">
-          <label for="email" class="form-label">Endereço de e-mail:</label>
-          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" maxlength="50" minlength="10"
+          <input type="text" id="fullName" name="fullName" placeholder="Jhon Doe da Silva" maxlength="40" minlength="10"
             class="form-control" required>
         </div>
         <div class="mb-4">
-          <label for="destination1">Cidade</label>
-          <input type="radio" id="destination1" className="radios" name="destinations" value="Cidade" required>
+          <label for="email" class="form-label">Endereço de e-mail:</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@mail.com" maxlength="50" minlength="10"
+            class="form-control" required>
         </div>
+        <div class="mb-4">
+          <label for="destination1" class="form-check-label">Cidade</label>
+          <input type="radio" id="destination1" className="radios" name="destinations" value="Cidade"
+            class="form-check-input" required>
 
-        <label for="destination2">Campo</label>
-        <input type="radio" id="destination2" className="radios" name="destinations" value="Campo" required>
+          <label for="destination2" class="form-check-label ms-3">Campo</label>
+          <input type="radio" id="destination2" className="radios" name="destinations" value="Campo"
+            class="form-check-input" required>
 
-        <label for="destination3">Praia</label>
-        <input type="radio" id="destination3" className="radios" name="destinations" value="Praia" required>
+          <label for="destination3" class="form-check-label ms-3">Praia</label>
+          <input type="radio" id="destination3" className="radios" name="destinations" value="Praia"
+            class="form-check-input" required>
 
-        <label for="destination4">Montanhas</label>
-        <input type="radio" id="destination4" className="radios" name="destinations" value="Montanhas" required>
-        <br />
-
-        <label for="why">Por que você deveria ser a pessoa desenvolvedora escolhida pelo concurso TrybeTrip?</label>
-        <br />
-        <textarea name="why" id="why" cols="60" rows="10" placeholder="Digite sua resposta vencedora aqui"></textarea>
-        <br />
-
-        <label for="date">Qual a melhor data para realizar sua viagem?</label>
-        <input type="date" id="date">
-        <br />
+          <label for="destination4" class="form-check-label ms-3">Montanhas</label>
+          <input type="radio" id="destination4" className="radios" name="destinations" value="Montanhas"
+            class="form-check-input" required>
+        </div>
+        <div class="mb-4">
+          <label for="why" class="form-label">Por que você deveria ser a pessoa desenvolvedora escolhida pelo concurso
+            TrybeTrip?</label>
+          <textarea name="why" id="why" cols="60" rows="10" placeholder="Digite sua resposta vencedora aqui"
+            class="form-control"></textarea>
+        </div>
+        <div class="mb-4">
+          <label for="date" class="form-label">Qual a melhor data para realizar sua viagem?</label>
+          <input type="date" id="date" class="form-control">
+        </div>
 
         <label for="promo">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe.</label>
         <input type="checkbox" name="promo" id="promo">
@@ -64,6 +74,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+    <script src="dist/js/DatePickerX.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
