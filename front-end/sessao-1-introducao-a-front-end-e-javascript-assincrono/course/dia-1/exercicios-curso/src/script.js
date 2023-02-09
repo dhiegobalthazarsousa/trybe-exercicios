@@ -1,4 +1,5 @@
 import { nanoid } from "nanoid"; //nanoid é uma library node
+import { clipboardCopy } from 'clipboard-copy';
 
 import './style.css'; //consigo fazer isso por causa do vite
 
