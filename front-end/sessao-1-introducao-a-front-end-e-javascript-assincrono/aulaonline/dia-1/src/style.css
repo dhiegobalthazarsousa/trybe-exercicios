@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    /* background-image: url("./img/"); */
+    background-color: blue;
+}
+
+header {
+    width: 100vw;
+    height: 180px;
+    border: 5px solid white;
+    border-top: none;
+    /* background-image: ; */
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
