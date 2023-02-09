@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #505050;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto, Oxigen, Ubuntu, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#call {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#return {
+    display: flex;
+    justify-self: end;
+}
